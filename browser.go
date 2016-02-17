@@ -19,6 +19,7 @@ var (
 			"MAXTHON",
 		},
 		versionSplitters: [][]string{
+			[]string{"MSIE", ";"},
 			[]string{"MSIE ", ";"},
 			[]string{"rv:", ";"},
 			[]string{"rv:", ")"},

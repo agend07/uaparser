@@ -97,3 +97,13 @@ func TestParse4(t *testing.T) {
 		t.Error("wrong result")
 	}
 }
+
+func TestParse5(t *testing.T) {
+	result := Parse("Mozilla/5.0 (compatible; MSIE10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)")
+
+	if result.Browser.Name != "IE" ||
+		result.Browser.Version != "10.0" ||
+		result.OS.Name != "Windows Phone OS" {
+		t.Error("wrong result")
+	}
+}
