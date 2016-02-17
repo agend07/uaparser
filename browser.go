@@ -18,7 +18,11 @@ var (
 			"Opera",
 			"MAXTHON",
 		},
-		versionSplitters: [][]string{[]string{"MSIE ", ";"}},
+		versionSplitters: [][]string{
+			[]string{"MSIE ", ";"},
+			[]string{"rv:", ";"},
+			[]string{"rv:", ")"},
+		},
 	}
 
 	firefox = &itemSpec{

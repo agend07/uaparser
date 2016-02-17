@@ -81,8 +81,10 @@ func Parse(ua string) (info *UAInfo) {
 
 	info.Browser = searchIn(ua, _BROWSERS)
 	info.Device = searchIn(ua, _DEVICES)
-	info.DeviceType = searchIn(ua, _DEVICETYPES)
 	info.OS = searchIn(ua, _OS)
+
+	// not using this one
+	// info.DeviceType = searchIn(ua, _DEVICETYPES)
 
 	return
 }
