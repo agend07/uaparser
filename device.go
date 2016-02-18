@@ -21,10 +21,17 @@ var (
 		mustContains: []string{"Macintosh"},
 	}
 
+	pc = &itemSpec{
+		name:            "PC",
+		mustContains:    []string{"Windows", "Linux"},
+		mustNotContains: []string{"Windows Phone", "Android"},
+	}
+
 	_DEVICES = []*itemSpec{
 		iPad,
 		iPhone,
 		iPod,
 		mac,
+		pc,
 	}
 )
